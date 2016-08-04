@@ -29,7 +29,7 @@ def make_order(preferences):
     for ingredient_type, liked in preferences.items():
         if not liked:
             continue
-        print(random.choice(ingredients))
+        order.append(random.choice(ingredients[ingredient_type]))
     return order
 
 
